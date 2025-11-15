@@ -9,3 +9,8 @@ Answer:State and props in React both hold data, but they serve different purpose
 
 Question 03:What is the useState hook, and how does it work?
 Answer:The useState hook in React is a built-in function that allows functional components to create and manage state. It works by returning an array with two values: the current state and a function to update that state. When you call the update function, React re-renders the component with the new state value. The hook is initialized with a default value, and every time the state changes, React ensures the UI updates automatically to reflect those changes. In simple terms, useState lets components remember values and re-render when those values change, making it essential for handling dynamic and interactive behavior in React applications.
+
+
+
+Question 04:How can you share state between components in React?
+Answer:State can be shared between components in React by lifting the state up to a common parent component. Instead of each component managing its own state, the shared state is stored in the parent, and the parent passes both the data and the update function to its child components through props. When a child updates the state, the parent re-renders, and all components that depend on that state update automatically. State can also be shared using React Context, which allows data to be passed deeply through the component tree without prop drilling. For large applications, global state management libraries such as Redux, Zustand, or Recoil are often used.
