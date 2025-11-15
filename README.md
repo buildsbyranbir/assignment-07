@@ -14,3 +14,9 @@ Answer:The useState hook in React is a built-in function that allows functional 
 
 Question 04:How can you share state between components in React?
 Answer:State can be shared between components in React by lifting the state up to a common parent component. Instead of each component managing its own state, the shared state is stored in the parent, and the parent passes both the data and the update function to its child components through props. When a child updates the state, the parent re-renders, and all components that depend on that state update automatically. State can also be shared using React Context, which allows data to be passed deeply through the component tree without prop drilling. For large applications, global state management libraries such as Redux, Zustand, or Recoil are often used.
+
+
+
+
+Question 05:How is event handling done in React?
+Answer:Event handling in React is done using functions that respond to user actions, similar to JavaScript but with a few key differences. Instead of using traditional HTML event attributes, React uses camelCase event names like onClick or onChange, and event handlers are passed as functions, not strings. React also uses its own system called Synthetic Events, which wraps browser events to ensure consistent behavior across different browsers. When an event occurs, React calls the assigned function and updates the component if needed. This approach makes event handling more predictable, organized, and easier to manage within React’s component structure.
